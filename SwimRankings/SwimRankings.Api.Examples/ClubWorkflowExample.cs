@@ -138,12 +138,12 @@ public static class ClubWorkflowExample
                     pb.PoolLength,
                     TimeInMs = pb.SwimTime.TimeInMs,
                     TimeDisplay = pb.SwimTime.DisplayValue,
-                    Meet = new
+                    Meet = pb.Meet != null ? new
                     {
                         pb.Meet.Name,
                         pb.Meet.Date,
                         pb.Meet.City
-                    }
+                    } : null
                 }).ToList()
             }).ToList(),
             RelayTeams = new
