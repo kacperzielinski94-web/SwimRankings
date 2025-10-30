@@ -1,6 +1,19 @@
 # SwimRankings
 Download swimmer data directly from SwimRankings.com
 
+## Features
+
+- Fetch individual swimmer data with personal bests
+- Retrieve all swimmers from a specific club
+- Filter swimmers by performance criteria (minimum times)
+- Optimize relay team selection (freestyle and medley relays)
+- Export data in JSON format for n8n workflows and automation
+- Manage and select swimmers for competitions
+
+## Quick Start
+
+### Fetch Individual Swimmer Data
+
 Example code:
 ```csharp
 var swimrankingsId = "4046710";
@@ -477,3 +490,106 @@ This will write the following to the console:
   "LastName": "Jolink"
 }
 ```
+
+### Fetch Club Data
+
+```csharp
+var clubId = "1234"; // Replace with actual club ID
+var httpClient = new HttpClient();
+var clubApi = new ClubApi(httpClient);
+
+var club = await clubApi.GetAsync(clubId);
+Console.WriteLine($"Club: {club.Name} ({club.Country})");
+Console.WriteLine($"Total Members: {club.Members.Count}");
+```
+
+### Filter Swimmers by Performance
+
+```csharp
+using SwimRankings.Api.Helpers;
+
+// Get all swimmers who can swim 50m Freestyle under 30 seconds
+var qualifiedSwimmers = swimmers.FilterByMinimumTime(
+    stroke: Stroke.Freestyle,
+    distanceInMeters: 50,
+    maxTimeInMs: 30000,
+    poolLength: 25
+);
+```
+
+### Find Best Relay Team
+
+```csharp
+using SwimRankings.Api.Helpers;
+
+// Find the best 4x50m Freestyle relay team
+var relayTeam = RelayTeamHelper.FindBestRelayTeam(
+    swimmers: swimmers,
+    stroke: Stroke.Freestyle,
+    distanceInMeters: 50,
+    poolLength: 25,
+    gender: Gender.Male
+);
+
+Console.WriteLine($"Best Relay Team (Total: {relayTeam.GetDisplayTime()}):");
+foreach (var member in relayTeam.Members)
+{
+    Console.WriteLine($"Position {member.Position}: {member.Swimmer.FirstName} {member.Swimmer.LastName}");
+}
+```
+
+### Find Best Medley Relay Team
+
+```csharp
+// Find the best medley relay (Backstroke, Breaststroke, Butterfly, Freestyle)
+var medleyTeam = RelayTeamHelper.FindBestMedleyRelayTeam(
+    swimmers: swimmers,
+    distanceInMeters: 100,
+    poolLength: 50,
+    gender: Gender.Female
+);
+```
+
+## n8n Integration
+
+This library is designed to work seamlessly with n8n workflows for automation of swimming club management tasks. See [N8N_INTEGRATION_GUIDE.md](SwimRankings/N8N_INTEGRATION_GUIDE.md) for detailed instructions on:
+
+- Setting up workflows to fetch and manage swimmer data
+- Automating competition roster selection
+- Optimizing relay team compositions
+- Tracking performance improvements
+- Exporting data for analysis
+
+## Use Cases
+
+- **Club Management**: Fetch and manage data for all swimmers in your club
+- **Competition Selection**: Automatically select swimmers who meet qualifying times
+- **Relay Optimization**: Calculate the fastest relay team combinations
+- **Performance Tracking**: Monitor swimmer improvements over time
+- **Workflow Automation**: Integrate with n8n for automated reporting and notifications
+
+## Examples
+
+See the `SwimRankings.Api.Examples` project for complete examples including:
+- Fetching club data
+- Filtering swimmers by criteria
+- Optimizing relay teams
+- Exporting data for n8n workflows
+
+## API Reference
+
+### ClubApi
+- `GetAsync(clubId)` - Fetch club data and member list
+
+### SwimmerApi
+- `GetAsync(swimmerId)` - Fetch detailed swimmer data with personal bests
+
+### Filter Helpers
+- `FilterByMinimumTime()` - Filter swimmers by performance criteria
+- `FilterByGender()` - Filter swimmers by gender
+- `FilterByYearOfBirth()` - Filter swimmers by age range
+
+### Relay Team Helpers
+- `FindBestRelayTeam()` - Find optimal relay team for an event
+- `FindBestMedleyRelayTeam()` - Find optimal medley relay team
+- `GetBestTime()` - Get a swimmer's best time for an event
