@@ -112,10 +112,12 @@ public class SwimmerFilterHelperTests
     [Test]
     public void FilterByMinimumTime_WithoutPoolLength_ConsidersBothPools()
     {
+        const int maxTimeForAllThreeSwimmers = 32000;
+        
         var result = _swimmers.FilterByMinimumTime(
             Stroke.Freestyle,
             50,
-            32000, // Increased to 32 seconds to include all three swimmers
+            maxTimeForAllThreeSwimmers,
             null
         );
 
