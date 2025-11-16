@@ -223,6 +223,7 @@ The API provides JSON-formatted data ideal for n8n workflows:
           "Stroke": "Freestyle",
           "DistanceInMeters": 50,
           "PoolLength": 25,
+          "Points": 0,
           "TimeInMs": 25790,
           "TimeDisplay": "25.79"
         }

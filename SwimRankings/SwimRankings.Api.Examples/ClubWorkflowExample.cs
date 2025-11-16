@@ -136,6 +136,7 @@ public static class ClubWorkflowExample
                     Stroke = pb.Stroke.ToString(),
                     pb.DistanceInMeters,
                     pb.PoolLength,
+                    pb.Points,
                     TimeInMs = pb.SwimTime.TimeInMs,
                     TimeDisplay = pb.SwimTime.DisplayValue,
                     Meet = pb.Meet != null ? new

@@ -81,6 +81,7 @@ internal static class SwimmerDataBuilder
         var distance = RegexHelper.GetMatchValue(strokeAndDistance, @"(.*?)m");
         var poolLength = RegexHelper.GetMatchValue(pbLine, @"<td class=""course"">(.*?)m</td>");
         var timeString = RegexHelper.GetMatchValue(pbLine, @"a  class=""time"".*?>(.*?)<");
+        var pointsString = RegexHelper.GetMatchValue(pbLine, @"<td class=""points"".*?>(.*?)</td>");
 
         var meetName = RegexHelper.GetMatchValue(pbLine, @"<td class=""name"">.*?title=""(.*?)""");
         var meetDate = RegexHelper.GetMatchValue(pbLine, @"<td class=""date"">(.*?)</td>");
@@ -92,6 +93,7 @@ internal static class SwimmerDataBuilder
             DistanceInMeters = int.TryParse(distance, out var distanceValue) ? distanceValue : 0,
             PoolLength = int.TryParse(poolLength, out var poolLengthValue) ? poolLengthValue : 0,
             SwimTime = timeString.ToSwimTime(),
+            Points = int.TryParse(pointsString, out var pointsValue) ? pointsValue : 0,
             Meet = new()
             {
                 Name = WebUtility.HtmlDecode(meetName),

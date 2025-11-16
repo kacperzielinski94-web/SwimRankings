@@ -41,6 +41,7 @@ This will write the following to the console:
         "DisplayValue": "28.39"
       },
       "PoolLength": 50,
+      "Points": 0,
       "Meet": {
         "Name": "Open Nederlandse Masters Kampioenschappen 2018 lb",
         "Date": {
@@ -59,6 +60,7 @@ This will write the following to the console:
         "DisplayValue": "25.79"
       },
       "PoolLength": 25,
+      "Points": 0,
       "Meet": {
         "Name": "",
         "Date": {
@@ -77,6 +79,7 @@ This will write the following to the console:
         "DisplayValue": "58.95"
       },
       "PoolLength": 50,
+      "Points": 0,
       "Meet": {
         "Name": "",
         "Date": {
@@ -95,6 +98,7 @@ This will write the following to the console:
         "DisplayValue": "56.50"
       },
       "PoolLength": 25,
+      "Points": 0,
       "Meet": {
         "Name": "",
         "Date": {
@@ -113,6 +117,7 @@ This will write the following to the console:
         "DisplayValue": "2:15.15"
       },
       "PoolLength": 25,
+      "Points": 0,
       "Meet": {
         "Name": "",
         "Date": {
@@ -131,6 +136,7 @@ This will write the following to the console:
         "DisplayValue": "4:53.04"
       },
       "PoolLength": 25,
+      "Points": 0,
       "Meet": {
         "Name": "Deel 1 KNZB zwemcompetitie landelijk B/C",
         "Date": {
@@ -149,6 +155,7 @@ This will write the following to the console:
         "DisplayValue": "11:13.46"
       },
       "PoolLength": 25,
+      "Points": 0,
       "Meet": {
         "Name": "A. Jansen Lange Afstand Circuit  periode 1",
         "Date": {
@@ -167,6 +174,7 @@ This will write the following to the console:
         "DisplayValue": "31.91"
       },
       "PoolLength": 50,
+      "Points": 0,
       "Meet": {
         "Name": "Open Nederlandse Masters Kampioenschappen 2018 lb",
         "Date": {
@@ -185,6 +193,7 @@ This will write the following to the console:
         "DisplayValue": "31.05"
       },
       "PoolLength": 25,
+      "Points": 0,
       "Meet": {
         "Name": "",
         "Date": {
@@ -203,6 +212,7 @@ This will write the following to the console:
         "DisplayValue": "1:06.31"
       },
       "PoolLength": 50,
+      "Points": 0,
       "Meet": {
         "Name": "",
         "Date": {
@@ -221,6 +231,7 @@ This will write the following to the console:
         "DisplayValue": "1:07.41"
       },
       "PoolLength": 25,
+      "Points": 0,
       "Meet": {
         "Name": "",
         "Date": {
@@ -239,6 +250,7 @@ This will write the following to the console:
         "DisplayValue": "2:34.46"
       },
       "PoolLength": 50,
+      "Points": 0,
       "Meet": {
         "Name": "",
         "Date": {
@@ -257,6 +269,7 @@ This will write the following to the console:
         "DisplayValue": "2:29.36"
       },
       "PoolLength": 25,
+      "Points": 0,
       "Meet": {
         "Name": "",
         "Date": {
@@ -275,6 +288,7 @@ This will write the following to the console:
         "DisplayValue": "34.11"
       },
       "PoolLength": 25,
+      "Points": 0,
       "Meet": {
         "Name": "",
         "Date": {
@@ -293,6 +307,7 @@ This will write the following to the console:
         "DisplayValue": "1:21.42"
       },
       "PoolLength": 25,
+      "Points": 0,
       "Meet": {
         "Name": "Deel 1 KNZB zwemcompetitie landelijk B/C",
         "Date": {
@@ -311,6 +326,7 @@ This will write the following to the console:
         "DisplayValue": "3:03.01"
       },
       "PoolLength": 25,
+      "Points": 0,
       "Meet": {
         "Name": "",
         "Date": {
@@ -329,6 +345,7 @@ This will write the following to the console:
         "DisplayValue": "29.45"
       },
       "PoolLength": 50,
+      "Points": 0,
       "Meet": {
         "Name": "Open Nederlandse Masters Kampioenschappen 2018 lb",
         "Date": {
@@ -347,6 +364,7 @@ This will write the following to the console:
         "DisplayValue": "27.95"
       },
       "PoolLength": 25,
+      "Points": 0,
       "Meet": {
         "Name": "",
         "Date": {
@@ -365,6 +383,7 @@ This will write the following to the console:
         "DisplayValue": "1:11.85"
       },
       "PoolLength": 25,
+      "Points": 0,
       "Meet": {
         "Name": "",
         "Date": {
@@ -383,6 +402,7 @@ This will write the following to the console:
         "DisplayValue": "1:05.48"
       },
       "PoolLength": 25,
+      "Points": 0,
       "Meet": {
         "Name": "Deel 1 KNZB zwemcompetitie landelijk B/C",
         "Date": {
@@ -401,6 +421,7 @@ This will write the following to the console:
         "DisplayValue": "2:31.98"
       },
       "PoolLength": 25,
+      "Points": 0,
       "Meet": {
         "Name": "",
         "Date": {
@@ -419,6 +440,7 @@ This will write the following to the console:
         "DisplayValue": "26.41"
       },
       "PoolLength": 50,
+      "Points": 0,
       "Meet": {
         "Name": "Open Nederlandse Masters Kampioenschappen 2018 lb",
         "Date": {
@@ -437,6 +459,7 @@ This will write the following to the console:
         "DisplayValue": "25.42"
       },
       "PoolLength": 25,
+      "Points": 0,
       "Meet": {
         "Name": "",
         "Date": {
@@ -455,6 +478,7 @@ This will write the following to the console:
         "DisplayValue": "59.87"
       },
       "PoolLength": 50,
+      "Points": 0,
       "Meet": {
         "Name": "Open Nederlandse Masters Kampioenschappen 2018 lb",
         "Date": {
@@ -473,6 +497,7 @@ This will write the following to the console:
         "DisplayValue": "29.79"
       },
       "PoolLength": 25,
+      "Points": 0,
       "Meet": {
         "Name": "",
         "Date": {

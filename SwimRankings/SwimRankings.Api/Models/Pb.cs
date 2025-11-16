@@ -12,5 +12,6 @@ public class Pb
     public int DistanceInMeters { get; set; }
     public SwimTime SwimTime { get; set; } = new();
     public int PoolLength { get; set; }
+    public int Points { get; set; }
     public Meet? Meet { get; set; }
 }
