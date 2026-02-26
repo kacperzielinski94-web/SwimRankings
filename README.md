@@ -477,3 +477,17 @@ This will write the following to the console:
   "LastName": "Jolink"
 }
 ```
+## Python fallback CLI (works without .NET runtime)
+If your local environment cannot run the C# project, you can use a lightweight Python CLI that fetches and parses the same swimmer page.
+
+```bash
+python tools/swimrankings_fetcher.py 4046710 --pretty
+```
+
+It prints JSON with swimmer metadata (name, club, gender) and PB rows (event, pool length, time, meet metadata).
+
+Run parser unit tests:
+
+```bash
+python -m unittest tests/test_swimrankings_fetcher.py
+```
